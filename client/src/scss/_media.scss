@@ -1,0 +1,37 @@
+@import '_variables.scss';
+
+@mixin laptop() {
+  @media (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin laptop-mini() {
+  @media (max-width: $laptop-mini) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mini-tablet() {
+  @media (max-width: $miniTablet) {
+    @content;
+  }
+}
+
+@mixin big-mobile() {
+  @media (max-width: $bigMobile) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}

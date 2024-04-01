@@ -1,0 +1,25 @@
+@import '../variables';
+
+.dynamic-balance {
+  max-width: 684px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &__chart {
+    max-height: 195px;
+  }
+
+  &--all {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &:focus {
+    outline: 1px solid $brand-primary;
+  }
+
+  &:hover {
+    outline: 1px solid $brand-primary;
+  }
+}

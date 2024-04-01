@@ -1,0 +1,147 @@
+@import '../variables';
+
+.user-currency {
+  padding: 50px;
+}
+
+.user-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 45px;
+  max-width: 588px;
+}
+
+.list-currency {
+  padding: 0;
+
+  &__item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    color: $black;
+
+    &::before {
+      content: '';
+      border-bottom: 1px dashed $black;
+      flex-grow: 1;
+      order: 2;
+      margin: 0 5px;
+    }
+
+    &--buy::before {
+      border-bottom: 1px dashed $state-success;
+    }
+
+    &--low::before {
+      border-bottom: 1px dashed $state-error;
+    }
+  }
+
+  &__value {
+    position: relative;
+    order: 3;
+    font-weight: 400;
+
+    &--icon-buy {
+      padding-right: 25px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        right: 0;
+        width: 20px;
+        height: 10px;
+        background-image: url('../asset/images/buyCurrency.svg');
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: right center;
+      }
+    }
+
+    &--icon-low {
+      padding-right: 25px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        right: 0;
+        width: 20px;
+        height: 10px;
+        background-image: url('../asset/images/lowCurrency.svg');
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: right center;
+      }
+    }
+  }
+}
+
+.translate {
+  padding: 50px;
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 25px;
+  }
+
+  &__dropdown-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    // Только для тестов
+    width: 365px;
+  }
+
+  &__label {
+    display: flex;
+    width: calc((100% - 20px) / 2);
+
+    &--mb {
+      margin-bottom: 5px;
+    }
+
+    &--wrap {
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+
+  &__input {
+    padding: 8px 16px;
+    max-width: 300px;
+    width: 100%;
+    border: 1px solid $gray_5;
+    border-radius: 7px;
+  }
+
+  &__span {
+    align-self: center;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+
+    &--no-wrapper {
+      margin-right: 8px;
+    }
+  }
+}
+
+.currency {
+  padding: 50px;
+  max-width: 702px;
+  width: 100%;
+  max-height: 1163px;
+  overflow: hidden;
+}

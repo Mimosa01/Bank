@@ -1,0 +1,52 @@
+@import '../variables';
+
+.info-section {
+  display: flex;
+  column-gap: 35px;
+  margin-bottom: 50px;
+
+  &__header {
+    align-self: center;
+  }
+
+  &__btn {
+    display: flex;
+    column-gap: 10px;
+
+    &--view {
+      column-gap: 14px;
+    }
+
+    & img {
+      align-self: center;
+    }
+  }
+
+  &__column {
+    flex-direction: column;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__number {
+    font-weight: 400;
+    font-size: 34px;
+  }
+
+  &__balance {
+    font-weight: 400;
+    font-size: 20px;
+
+    &--bold {
+      margin-right: 50px;
+      font-weight: 700;
+    }
+  }
+}

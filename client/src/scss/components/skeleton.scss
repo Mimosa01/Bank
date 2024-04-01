@@ -1,0 +1,214 @@
+@import '../variables';
+
+.skeleton {
+  padding-bottom: 50px;
+  animation-name: skeleton;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  &__radius {
+    border-radius: 5px;
+  }
+
+  &__light {
+    background-color: $gray_7;
+  }
+
+  &__dark {
+    background-color: $gray_6;
+  }
+
+  &__card-radius {
+    border-radius: 50px;
+  }
+
+  &__header {
+    margin-bottom: 50px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    min-width: 125px;
+    width: 15%;
+    height: 50px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    width: 45.6%;
+
+    &-item {
+      width: 134px;
+      height: 52px;
+    }
+  }
+
+  &__burger {
+    display: none;
+    width: 52px;
+    height: 52px;
+  }
+
+  &__info {
+    display: flex;
+    column-gap: 35px;
+    align-items: center;
+    margin-bottom: 50px;
+
+    &-second {
+      justify-content: space-between;
+    }
+
+    &-header {
+      width: 204px;
+      height: 52px;
+    }
+
+    &-number {
+      min-width: 235px;
+      width: 180%;
+      height: 40px;
+    }
+
+    &-btn {
+      width: 234px;
+      height: 52px;
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 45px;
+      width: calc((100% - 50px) * 0.45);
+    }
+  }
+
+  &__user-currency {
+    height: 411px;
+  }
+
+  &__form-currency {
+    height: 273px;
+  }
+
+  &__all-currency {
+    width: calc((100% - 50px) * 0.55);
+    height: 728px;
+  }
+
+  &__balance-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__balance-text {
+    width: 100px;
+    height: 23px;
+  }
+
+  &__all-width {
+    width: 100%;
+    height: 345px;
+  }
+
+  &__form {
+    width: calc((100% - 50px) * 0.45);
+    height: 280px;
+  }
+
+  &__chart {
+    width: calc((100% - 50px) * 0.55);
+    height: 288px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+    padding: 22px;
+    width: calc((100% - 140px) / 3);
+    height: 156px;
+    border-radius: 9px;
+  }
+
+  &__card-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 70px;
+    row-gap: 50px;
+  }
+
+  &__card-number {
+    width: 58%;
+    height: 22px;
+  }
+
+  &__card-balance {
+    width: 100px;
+    height: 20px;
+  }
+
+  &__card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__card-text {
+    width: 58%;
+    height: 30px;
+  }
+
+  &__card-btn {
+    width: 31%;
+    height: 52px;
+  }
+
+  &__dropdown {
+    margin-right: auto;
+    min-width: 235px;
+    width: 22%;
+    height: 52px;
+  }
+
+  &__map {
+    width: 100%;
+    height: calc(100vh - 134px);
+  }
+}
+
+.shadow {
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+@keyframes skeleton {
+  from {
+    opacity: .8;
+  }
+
+  to {
+    opacity: .5;
+  }
+}

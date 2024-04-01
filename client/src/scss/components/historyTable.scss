@@ -1,0 +1,91 @@
+@import '../variables';
+
+.history {
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:focus {
+    outline: 1px solid $brand-primary;
+  }
+
+  &:hover {
+    outline: 1px solid $brand-primary;
+  }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  &__thead {
+    color: $white;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: $brand-primary;
+
+    & th {
+      padding: 25px 0;
+      text-align: start;
+
+      &:first-child {
+        padding-left: 50px;
+        border-radius: 15px 0 0 15px;
+      }
+
+      &:last-child {
+        padding-right: 50px;
+        border-radius: 0 15px 15px 0;
+      }
+    }
+  }
+
+  &__body {
+    width: 100%;
+
+    & td {
+      padding: 25px 0;
+      border-bottom: 2px solid rgba(0, 82, 255, 0.1);
+
+      &:first-child {
+        padding-left: 50px;
+      }
+
+      &:last-child {
+        padding-right: 50px;
+      }
+    }
+  }
+
+  &__col-sender {
+    width: 30%;;
+  }
+
+  &__col-recipient {
+    width: 30%;
+  }
+
+  &__col-sum {
+    width: 14.8%;
+  }
+}
+
+.buy {
+  color: $state-success;
+}
+
+.low {
+  color: $brand-secondary_4;
+}
+
+.scroll-table table {
+  min-width: 658px;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.scroll-table-body {
+  min-width: 658px;
+  height: 150px;
+  overflow-y: auto;
+}

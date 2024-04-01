@@ -1,0 +1,45 @@
+@import '../variables';
+
+.account-card {
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+  width: calc((100% - 140px) / 3);
+  border-radius: 9px;
+
+  &__number {
+    margin: 0;
+    margin-bottom: 9px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 122%;
+  }
+
+  &__balance {
+    margin-bottom: 9px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 143%;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__time {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+  }
+
+  &__mini-header {
+    font-size: 13px;
+    font-weight: 700;
+  }
+}
